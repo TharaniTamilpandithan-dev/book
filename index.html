@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1>📖Book</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Year of Magical Thinking</h2>
+            <h4>Joan Didion</h4>
+            <p>a stunning book of electric honesty and passion that explores an intensely personal yet universal
+                experience: a portrait of a marriage and a life, in good times and bad that will speak to anyone who
+                has ever loved a husband or wife or child. This powerful book is Didion’s attempt to make sense of the
+                “weeks and then months that cut loose any fixed idea I ever had about death, about illness … about
+                marriage and children and memory … about the shallowness of sanity, about life itself.”</p>
+            <button type="button" onclick="deletebook(event)">Update</button>
+            <button type="button" onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Enter the Book Name" id="book-name">
+            <input type="text" placeholder="Enter Author Name" id="author-name">
+            <textarea placeholder="Short Description" id="book-description"></textarea>
+            <button type="button" id="addbook">Add</button>
+            <button type="button" id="cancelpopup">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
